@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-cinzel: 'Cinzel', serif;
+  --font-marcellus: 'Marcellus', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-devanagari: 'Tiro Devanagari Marathi', 'Rozha One', serif;
+
+  --color-temple-ivory: #F6EFE6;
+  --color-temple-cream: #FAF4EB;
+  --color-temple-maroon: #4A1017;
+  --color-temple-deep-maroon: #360A10;
+  --color-temple-gold: #C59A3F;
+  --color-temple-gold-light: #E7C978;
+  --color-temple-gold-dark: #91681D;
+  --color-temple-sand: #EBDDCB;
+  --color-temple-terracotta: #A43F24;
+}
+
+@layer utilities {
+  .font-script {
+    font-family: 'Great Vibes', cursive;
+  }
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+  .font-marcellus {
+    font-family: 'Marcellus', serif;
+  }
+  .font-serif-hero {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-devanagari {
+    font-family: 'Tiro Devanagari Marathi', 'Rozha One', serif;
+  }
+}
+
+/* Custom Temple Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F6EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #C59A3F;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #91681D;
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #8B6508 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle gold border glow */
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.18), inset 0 0 15px rgba(212, 175, 55, 0.08);
+}
+
+/* Floating animation */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-soft-float {
+  animation: softFloat 6s ease-in-out infinite;
+}
+
+@keyframes diyaGlow {
+  0%, 100% {
+    opacity: 0.75;
+    filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.6));
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.95;
+    filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.9));
+    transform: scale(1.05);
+  }
+}
+
+.animate-diya-glow {
+  animation: diyaGlow 3s ease-in-out infinite;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Shruti & Rajvardhan Wedding Invitation",
+  "description": "South Indian temple-style interactive wedding invitation for Shruti & Rajvardhan with auspicious blessings, ceremony schedule, countdown, interactive map, calendar add, and RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
